@@ -18,7 +18,7 @@ class Player : GameObject
     override func Start()
     {
         zPosition = Layer.plane.rawValue
-        Reset()
+        //Reset()
     }
     
     override func Update()
@@ -28,16 +28,16 @@ class Player : GameObject
     
     override func CheckBounds()
     {
-        // constrain the player on the left boundary
-        if(position.x <= -320)
+        // constrain the player on the top boundary
+        if(position.y <= -320)
         {
-            position.x = -320
+            position.y = -320
         }
         
-        // constrain the player on the right boundary
-        if(position.x >= 320)
+        // constrain the player on the bottom boundary
+        if(position.y >= 320)
         {
-            position.x = 320
+            position.y = 320
         }
     }
     
