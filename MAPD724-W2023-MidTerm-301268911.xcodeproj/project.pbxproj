@@ -48,6 +48,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B79952A29B454FC0037CDE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		6B927A3929B3F9AD00127970 /* MAPD724-W2023-MidTerm-301268911.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MAPD724-W2023-MidTerm-301268911.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B927A3C29B3F9AD00127970 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B927A4429B3F9AD00127970 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +120,7 @@
 		6B927A3B29B3F9AD00127970 /* MAPD724-W2023-MidTerm-301268911 */ = {
 			isa = PBXGroup;
 			children = (
+				6B79952A29B454FC0037CDE6 /* Info.plist */,
 				6B927A9729B3FA8600127970 /* Scenes */,
 				6B927A9229B3FA7800127970 /* Managers */,
 				6B927A7F29B3FA3500127970 /* GameObjects */,
@@ -471,6 +473,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7RX2WS3BM6;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MAPD724-W2023-MidTerm-301268911/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = NO;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -498,6 +502,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7RX2WS3BM6;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MAPD724-W2023-MidTerm-301268911/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = NO;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

@@ -65,10 +65,10 @@ class GameViewController: UIViewController {
     
     func presentStartScene()
     {
-//        ScoreLabel.isHidden = true
-//        LivesLabel.isHidden = true
-//        StartLabel.isHidden = false
-//        StartButton.isHidden = false
+        ScoreLabel.isHidden = true
+        LivesLabel.isHidden = true
+        StartLabel.isHidden = false
+        StartButton.isHidden = false
         setScene(sceneName: "StartScene")
     }
     
