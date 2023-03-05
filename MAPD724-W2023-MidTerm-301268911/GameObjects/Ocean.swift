@@ -42,6 +42,6 @@ class Ocean : GameObject
     
     func Move()
     {
-        position.x -= verticalSpeed!
+        position.x -= horizontalSpeed!
     }
 }

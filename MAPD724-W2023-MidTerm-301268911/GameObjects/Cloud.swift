@@ -6,7 +6,7 @@ class Cloud : GameObject
     // initializer / constructor
     init()
     {
-        super.init(imageString: "cloud", initialScale: 1.0)
+        super.init(imageString: "cloud", initialScale: 0.6)
         Start()
     }
     
@@ -31,7 +31,7 @@ class Cloud : GameObject
     
     override func CheckBounds()
     {
-        if(position.x <= -902)
+        if(position.x <= -756)
         {
             Reset()
         }

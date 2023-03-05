@@ -7,7 +7,7 @@ class GameScene: SKScene
 {
     // instance variables
     var ocean1: Ocean?
-    var ocean2: Ocean?
+    //var ocean2: Ocean?
     var player: Player?
     var island: Island?
     var clouds : [Cloud] = []
@@ -18,16 +18,20 @@ class GameScene: SKScene
         
         // add the first ocean to the Scene
         ocean1 = Ocean()
-        ocean1?.Reset()
+        ocean1?.zRotation = 67.5
+        ocean1?.position = CGPoint(x: 733, y: 0)
+        //ocean1?.Reset()
         addChild(ocean1!)
         
         // add the second ocean to the scene
-        ocean2 = Ocean()
-        ocean2?.position.x = 438
-        addChild(ocean2!)
+        //ocean2 = Ocean()
+        //ocean2?.position.x = 438
+        //addChild(ocean2!)
         
         // add the player to the Scene
         player = Player()
+        player?.zRotation = 67.5
+        player?.position = CGPoint(x: -285, y: 0)
         addChild(player!)
         
         // add the island to the Scene
@@ -35,11 +39,11 @@ class GameScene: SKScene
         addChild(island!)
         
         // add 2 clouds to the Scene
-        for _ in 0...1
+        for index in 0...1
         {
-            let cloud = Cloud()
+            let cloud: Cloud = Cloud()
             clouds.append(cloud)
-            addChild(cloud)
+            addChild(clouds[index])
         }
         
         // Engine Sound - Background noise / music
@@ -70,18 +74,18 @@ class GameScene: SKScene
     
     func touchDown(atPoint pos : CGPoint)
     {
-        player?.TouchMove(newPos: CGPoint(x: pos.x, y: -640))
+        player?.TouchMove(newPos: CGPoint(x: -285, y: pos.y))
     }
     
     func touchMoved(toPoint pos : CGPoint)
     {
-        player?.TouchMove(newPos: CGPoint(x: pos.x, y: -640))
+        player?.TouchMove(newPos: CGPoint(x: -285, y: pos.y))
         
     }
     
     func touchUp(atPoint pos : CGPoint)
     {
-        player?.TouchMove(newPos: CGPoint(x: pos.x, y: -640))
+        player?.TouchMove(newPos: CGPoint(x: -285, y: pos.y))
         
     }
     
@@ -107,7 +111,7 @@ class GameScene: SKScene
     override func update(_ currentTime: TimeInterval)
     {
         ocean1?.Update()
-        ocean2?.Update()
+        //ocean2?.Update()
         player?.Update()
         island?.Update()
         

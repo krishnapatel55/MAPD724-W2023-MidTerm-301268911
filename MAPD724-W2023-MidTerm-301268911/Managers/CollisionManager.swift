@@ -16,7 +16,7 @@ class CollisionManager
     }
     
     // Collision Function
-    public static func SquaredRadiusCheck(scene: SKScene, object1: GameObject, object2: GameObject)
+    public static func SquaredRadiusCheck(scene: SKScene, object1: GameObject, object2: GameObject) -> Void
     {
         let P1 = object1.position
         let P2 = object2.position
