@@ -2,8 +2,10 @@
 //  AppDelegate.swift
 //  MAPD724-W2023-MidTerm-301268911
 //
-//  Created by Kisu on 2023-03-04.
-//
+//  Author : Krishna Patel
+//  Student ID : 301268911
+//  Date: 03/05/2023
+//  App Description: An action game app "Mail Pilot" using Swift and SpriteKit which can be play in landscape orientationin.
 
 import UIKit
 

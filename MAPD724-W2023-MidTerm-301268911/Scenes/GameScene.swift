@@ -31,7 +31,7 @@ class GameScene: SKScene
         // add the player to the Scene
         player = Player()
         player?.zRotation = 67.5
-        player?.position = CGPoint(x: -285, y: 0)
+        player?.position = CGPoint(x: -290, y: 0)
         addChild(player!)
         
         // add the island to the Scene
@@ -74,18 +74,18 @@ class GameScene: SKScene
     
     func touchDown(atPoint pos : CGPoint)
     {
-        player?.TouchMove(newPos: CGPoint(x: -285, y: pos.y))
+        player?.TouchMove(newPos: CGPoint(x: -290, y: pos.y))
     }
     
     func touchMoved(toPoint pos : CGPoint)
     {
-        player?.TouchMove(newPos: CGPoint(x: -285, y: pos.y))
+        player?.TouchMove(newPos: CGPoint(x: -290, y: pos.y))
         
     }
     
     func touchUp(atPoint pos : CGPoint)
     {
-        player?.TouchMove(newPos: CGPoint(x: -285, y: pos.y))
+        player?.TouchMove(newPos: CGPoint(x: -290, y: pos.y))
         
     }
     
